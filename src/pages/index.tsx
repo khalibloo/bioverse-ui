@@ -90,7 +90,7 @@ const Home: NextPage<Props> = () => {
                   <img
                     width={272}
                     alt="species image"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                    src={species.imageUrl}
                   />
                 }
               >

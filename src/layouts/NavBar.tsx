@@ -43,13 +43,6 @@ const NavBar: React.FC<Props> = () => {
     </Menu>
   );
 
-  let modalWidth;
-  if (responsive?.lg) {
-    modalWidth = "60%";
-  } else if (responsive?.md) {
-    modalWidth = "90%";
-  }
-
   return (
     <>
       <Modal
@@ -57,7 +50,6 @@ const NavBar: React.FC<Props> = () => {
         maskClosable={false}
         footer={null}
         onCancel={closeSettingsModal}
-        width={modalWidth}
       >
         <Tabs activeKey={settingsTab} onChange={setSettingsTab}>
           <Tabs.TabPane key="display" tab="Display">

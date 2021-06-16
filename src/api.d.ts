@@ -14,11 +14,13 @@ interface Species {
   id: number;
   name: string;
   description: string;
+  imageUrl: string;
   family: Family;
 }
 
 interface SpeciesInput {
   name: string;
   description: string;
+  imageUrl: string;
   familyId: number;
 }

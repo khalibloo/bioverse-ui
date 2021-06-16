@@ -11,14 +11,7 @@ if (config.env === "production") {
   });
 }
 
-export const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      cacheTime: Infinity,
-      staleTime: config.staleTime, // 1 month
-    },
-  },
-});
+export const queryClient = new QueryClient();
 
 export default axios.create({
   baseURL: config.apiUri,

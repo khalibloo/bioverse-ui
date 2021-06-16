@@ -29,6 +29,9 @@ const SpeciesForm: React.FC<Props> = ({ onSubmit }) => {
       <Form.Item label="Description" name="description">
         <Input.TextArea />
       </Form.Item>
+      <Form.Item label="Image URL" name="imageUrl">
+        <Input />
+      </Form.Item>
       <Form.Item
         label="Family"
         name="familyId"
